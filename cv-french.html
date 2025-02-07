@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mohamed ADERAK - Développeur Full Stack</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        accent: '#2563eb',
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+	body { font-family: 'Poppins', sans-serif; }
+	.divider { border-bottom: 1px solid #e5e7eb; margin: 1.2rem 0; }
+	
+	.skill-line {
+		display: block;
+		align-items: center;
+		background: #f8fafc;
+		padding: 0.75rem;
+		border-radius: 8px;
+		border: 1px solid #e2e8f0;
+	}
+
+	.skill-category {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		min-width: 140px;
+		font-weight: 600;
+		color: #1e3a8a;
+	}
+
+	.skill-category i {
+		font-size: 1rem;
+		width: 24px;
+		text-align: center;
+	}
+
+	.skill-items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		align-items: center;
+		flex-grow: 1;
+	}
+
+	.skill-items span {
+		background: white;
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.8rem;
+		color: #1e3a8a;
+		border: 1px solid #e2e8f0;
+		transition: all 0.2s;
+	}
+
+	.skill-items span:hover {
+		background: #e0f2fe;
+		border-color: #bae6fd;
+		transform: translateY(-1px);
+	}
+</style>
+</head>
+
+<body class="max-w-[210mm] mx-auto bg-white flex">
+	<!-- Left Column (40%) -->
+	<div class="w-[40%] bg-gray-50 p-6 border-r-2 border-gray-100">
+		<div class="text-center mb-6">
+			<img class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" 
+				 src="https://i.postimg.cc/251bws16/EVEHO-Team-Avatars-Mohammed-Doc.png" 
+				 alt="Mohamed ADERAK">
+			<h1 class="text-2xl font-bold text-primary">Mohamed ADERAK</h1>
+			<p class="text-sm text-accent font-medium">Développeur Full Stack</p>
+		</div>
+
+		<div class="space-y-4">
+			<div>
+				<h3 class="font-bold text-primary text-lg mb-3">
+					<i class="fas fa-address-card mr-2"></i>Contact
+				</h3>
+				<div class="space-y-2 text-sm">
+					<div class="flex items-center">
+						<i class="fas fa-envelope text-accent mr-2"></i>
+						medaderak5@gmail.com
+					</div>
+					<div class="flex items-center">
+						<i class="fas fa-phone text-accent mr-2"></i>
+						+212 639 634 162
+					</div>
+					<div class="flex items-center">
+						<i class="fab fa-github text-accent mr-2"></i>
+						mohamedaderak
+					</div>
+					<div class="flex items-center">
+						<i class="fab fa-linkedin text-accent mr-2"></i>
+						mohamedaderak
+					</div>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div>
+				<h3 class="font-bold text-primary text-lg mb-3">
+					<i class="fas fa-language mr-2"></i>Langues
+				</h3>
+				<div class="grid grid-cols-2 gap-2 text-sm">
+					<div class="bg-white p-2 rounded text-center">Amazigh<br><span class="text-gray-500">Maternelle</span></div>
+					<div class="bg-white p-2 rounded text-center">Arabe<br><span class="text-gray-500">Courant</span></div>
+					<div class="bg-white p-2 rounded text-center">Français<br><span class="text-gray-500">Courant</span></div>
+					<div class="bg-white p-2 rounded text-center">Anglais<br><span class="text-gray-500">Courant</span></div>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div>
+				<h3 class="font-bold text-primary text-lg mb-3">
+					<i class="fas fa-certificate mr-2"></i>Certifications
+				</h3>
+				<div class="space-y-2 text-sm">
+					<div class="bg-white p-2 rounded">UI/UX Design - Orange Digital Center</div>
+					<div class="bg-white p-2 rounded">Microsoft Office Specialist: Excel</div>
+					<div class="bg-white p-2 rounded">Microsoft Office Specialist: Word</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Right Column (60%) -->
+	<div class="w-[60%] p-6">
+		<!-- Expérience Professionnelle -->
+		<div class="mb-8">
+			<h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-primary pb-2">
+				<i class="fas fa-briefcase mr-2"></i>Expérience Professionnelle
+			</h3>
+			
+			<div class="exp-item">
+				<h4 class="font-semibold text-lg">Développeur Full Stack - 4Tech Lab</h4>
+				<p class="text-sm text-accent mb-2">Décembre 2023 - Décembre 2024</p>
+				<ul class="list-disc pl-5 text-sm space-y-1 text-gray-600">
+					<li>Développement d'applications web avec Nuxt.js, Vue.js, React et Svelte</li>
+					<li>Création de back-ends avec Laravel, Symfony, Node.js</li>
+					<li>Développement de sites e-commerce (PrestaShop, WordPress)</li>
+					<li>Optimisation des performances et intégration d'APIs</li>
+					<li>Gestion de projets Agile/Scrum</li>
+				</ul>
+			</div>
+
+			<div class="exp-item">
+				<h4 class="font-semibold text-lg">Stage - Conseil Régional Souss Massa</h4>
+				<p class="text-sm text-accent mb-2">Avril - Mai 2023</p>
+				<ul class="list-disc pl-5 text-sm space-y-1 text-gray-600">
+					<li>Application web de gestion des fournisseurs (Laravel)</li>
+					<li>Conception d'interface utilisateur intuitive</li>
+					<li>Gestion de base de données et stock</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Formation -->
+		<div class="mb-8">
+			<h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-primary pb-2">
+				<i class="fas fa-graduation-cap mr-2"></i>Formation
+			</h3>
+			
+			<div class="exp-item">
+				<h4 class="font-semibold text-lg">Ingénierie Informatique</h4>
+				<p class="text-sm text-accent">Faculté des Sciences d'Agadir • 2024-Présent</p>
+			</div>
+
+			<div class="exp-item">
+				<h4 class="font-semibold text-lg">DTS Développement Digital</h4>
+				<p class="text-sm text-accent">CENTER MIXTE - OFPPT • 2021-2023</p>
+			</div>
+		</div>
+		
+		<!-- Compétences Techniques -->
+		<div>
+			<h3 class="text-xl font-bold text-primary mb-4 border-b-2 border-primary pb-2">
+				<i class="fas fa-code mr-2"></i>Compétences Techniques
+			</h3>
+			
+			<div class="space-y-3">
+				<!-- Web Development -->
+				<div class="skill-line">
+					<div class="skill-category">
+						<i class="fas fa-globe text-blue-500"></i>
+						<span>Web Development:</span>
+					</div>
+					<div class="skill-items">
+						<span>HTML5/CSS3</span>
+						<span>JavaScript (ES6+)</span>
+						<span>React/Vue.js</span>
+						<span>Laravel/Symfony</span>
+						<span>Node.js/Nuxt.js</span>
+						<span>Python</span>
+						<span>TailwindCSS/Bootstrap</span>
+					</div>
+				</div>
+
+				<!-- Databases & CMS -->
+				<div class="skill-line">
+					<div class="skill-category">
+						<i class="fas fa-database text-purple-500"></i>
+						<span>Data & CMS:</span>
+					</div>
+					<div class="skill-items">
+						<span>SQL/MySQL/MongoDB</span>
+						<span>WordPress</span>
+						<span>PrestaShop</span>
+						<span>Cockpit CMS</span>
+					</div>
+				</div>
+
+				<!-- Embedded & Tools -->
+				<div class="skill-line">
+					<div class="skill-category">
+						<i class="fas fa-microchip text-red-500"></i>
+						<span>Embarqué & Outils:</span>
+					</div>
+					<div class="skill-items">
+						<span>Arduino</span>
+						<span>C/C++</span>
+						<span>Java</span>
+						<span>Git/Docker</span>
+						<span>Linux/DevOps</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>
